@@ -1,0 +1,228 @@
+body{
+    
+    background-color:rgb(82, 70, 52);
+    background-image: url("images/bakery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    padding-left:0;
+    padding-right:0;
+    
+}
+
+
+/* Navigation Bar */
+.navbar{
+    padding: 0.5rem 1rem;
+    background-color: rgb(143, 114, 90);
+    color: whitesmoke;
+    position: -webkit-sticky; /* Safari */
+    position: relative;
+    top: 0;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(236, 231, 205);
+    font-size: 1.2rem;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color:  rgb(184, 180, 157);
+}
+.nav-link:hover{
+    color: rgb(206, 199, 164);
+}
+.navbar-brand{
+    font-size: 2.2rem;
+    padding-left:30px;
+}
+.navbar-brand, h1,h2,h3,h4,h5{
+    /* font-family: 'Bebas Neue', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-family: 'Staatliches', cursive; */
+    font-family: 'Zilla Slab', serif;
+}
+h2{
+    font-size: 1.9rem;
+}
+    
+.nav-links{
+    border: none;
+    
+}
+/* Footer */
+footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items:baseline;
+    background-color: rgb(143, 114, 90);
+}
+.footer-piece{
+    box-sizing: border-box;
+    padding: 20px 10px 0px 10px;
+    width:16%;
+    font-size: 0.9rem;
+    /* height:200px; */
+    /* border:1px solid grey; */
+}
+.hide-1200{
+    display:none;
+}
+@media (min-width:1200px){
+    .footer-piece{
+        padding: 20px 20px;
+    }
+    .hide-1200{
+        display: inline;
+    }
+    footer{
+        align-items:center;
+    }
+}
+@media (min-width:990px){
+    .footer-piece{
+        padding: 20px 20px;
+        font-size: 1rem;
+    }
+}
+.footer-name{
+    width: 32%;
+}
+table [class^="icon"]{
+    padding-right: 20px;
+}
+footer [class^="icon"]{
+    padding-right: 10px;
+}
+a{
+    color:inherit ;
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgb(184, 180, 157);
+    font-weight: 600;
+}
+
+/* About us /Home */
+.about-element{
+    /* divs included in about us.html */
+    overflow: auto; 
+    margin:20px;"
+}
+.about-text{
+    /* styling text in paragraphs in About us Site / Home*/
+    padding:20px 0; 
+    text-align: justify;
+}
+
+#values-contain{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5% 5%;
+}
+.value{
+    margin:1% 4%;
+    text-align: center;
+    width:15%;
+    border: 1px solid;
+    
+    flex-shrink: 1;
+}
+.value img{
+    width:100px;
+}
+.about-element .card{
+    
+    margin:10px 20px;
+    width: 10%;
+    flex-shrink:1;
+    flex-grow:0;
+}
+.about-element #cards-div{
+    justify-content:center;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+.center-button{
+    display: block;
+    width:100px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    background-color: rgb(90, 60, 37);
+    border:none;
+}
+.btn-primary:hover{
+    background-color: rgb(143, 114, 90);
+}
+.w-90{
+    margin:0 20px;
+}
+
+
+/* Services */
+.card{
+    display:inline-block;
+    margin:10px 30px;
+    min-width:250px;
+    width: 15rem;
+    flex-shrink:1;
+    flex-grow:1;
+}
+#cards-div{
+    justify-content:center;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0px 10% 30px 10%;
+}
+
+
+/* Team */
+#team{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+   
+}
+.person-card{
+    box-sizing: border-box;
+    width:400px;
+    
+    padding:20px 10px;
+    /* border:1px solid black; */
+}
+.per-card-in{
+    margin-top:60px;
+    background-color: rgb(206, 199, 164);
+    /* border:1px solid black; */
+    border-radius: 5px;
+    margin-left:10%;
+    margin-right:10%;
+    padding:15px 15px;
+    text-align: justify;
+    height: 420px;
+}
+.per-card-in p{
+    padding-top:80px;
+}
+.person-card > img{
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    margin-left:115px;
+    
+    
+}
+.info h4,.info h5{
+    text-align: center;
+}
