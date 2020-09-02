@@ -7,11 +7,12 @@ body{
 }
 .container{
     background-color: white;
-    padding-left:0;
-    padding-right:0;
+    padding:0;
     
 }
-
+.page-context{
+    padding:0 10%;
+}
 
 /* Navigation Bar */
 .navbar{
@@ -89,6 +90,11 @@ footer{
         font-size: 1rem;
     }
 }
+@media (max-width:770px){
+    .footer-piece{
+        font-size:0.8em;}
+    
+}
 .footer-name{
     width: 32%;
 }
@@ -111,11 +117,11 @@ footer a:hover{
 .about-element{
     /* divs included in about us.html */
     overflow: auto; 
-    margin:20px;"
+    margin:20px 10%;
 }
 .about-text{
     /* styling text in paragraphs in About us Site / Home*/
-    padding:20px 0; 
+    padding:20px 0px; 
     text-align: justify;
 }
 
@@ -129,7 +135,6 @@ footer a:hover{
     margin:1% 4%;
     text-align: center;
     width:15%;
-    border: 1px solid;
     
     flex-shrink: 1;
 }
@@ -139,9 +144,10 @@ footer a:hover{
 .about-element .card{
     
     margin:10px 20px;
-    width: 10%;
+    width: 20%;
     flex-shrink:1;
     flex-grow:0;
+    min-width: 180px;
 }
 .about-element #cards-div{
     justify-content:center;
@@ -165,13 +171,25 @@ footer a:hover{
 .w-90{
     margin:0 20px;
 }
-
+#history-columns{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    
+}
+.history{
+    width: 45%;
+    display: inline-block;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
 
 /* Services */
 .card{
     display:inline-block;
     margin:10px 30px;
-    min-width:250px;
+    width:250px;
     width: 15rem;
     flex-shrink:1;
     flex-grow:1;
@@ -225,4 +243,25 @@ footer a:hover{
 }
 .info h4,.info h5{
     text-align: center;
+}
+
+/* Contact */
+.img-text{
+    position: absolute;
+    top: 32%;
+    left:20%;
+    font-size: 1.45em;
+    color: rgb(218, 216, 203);
+    padding:5px;
+    text-align:center;
+}
+.img-text a{
+    padding:5px;
+
+}
+.img-text a:hover{
+    color: rgb(248, 247, 241);
+    text-decoration: double;
+    background-color: #595d61;
+    border-radius: 5px;
 }
